@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>picoGIGA Lab · KIST</title>
+  <meta name="description" content="pico-to-GIGA Multiscale Simulation Research Group, Clean Energy Research Center, KIST.">
+  <meta name="theme-color" content="#0b1220">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="assets/css/style.css?v=20260927i">
+</head>
+<body data-page="home" class="has-hero">
+  <header class="site-header" id="site-header"></header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">KIST Clean Energy Research Center</div>
+          <h1>Chemistry, simulated from <span class="pico-word">pico</span> to <span class="giga-word">GIGA</span>.</h1>
+          <p class="lede">Multiscale simulation for clean energy, from electrons to chemical plants.</p>
+          <div class="hero-actions">
+            <a class="btn btn-light" href="research.html">Our research <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+            <a class="btn btn-ghost-light" href="contact.html">Join us</a>
+          </div>
+        </div>
+        <div class="zoom" id="zoom" role="img" aria-label="Animation zooming out from electrons to a molecule, a catalyst particle, a reactor and a chemical plant">
+          <video muted loop playsinline autoplay preload="auto" aria-hidden="true"><source src="assets/video/hero.mp4" type="video/mp4"></video>
+          <canvas aria-hidden="true"></canvas>
+          <div class="zoom-dots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+          <div class="zoom-label" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap research-home">
+        <div class="research-intro reveal">
+          <h2 class="section-title">Research</h2>
+          <p class="lede">Atomistic simulation and process engineering, applied to carbon, biomass and plastics.</p>
+          <a class="link-arrow" href="research.html">All research <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+        <div class="area-index">
+          <div class="area-index-group">Applications</div>
+          <div id="areas-app"></div>
+          <div class="area-index-group">Methods</div>
+          <div id="areas-method"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="wrap team">
+        <figure class="team-photo reveal" id="team-photo" data-img>
+          <div class="pattern"></div>
+          <figcaption></figcaption>
+        </figure>
+        <div class="team-text reveal">
+          <h2 class="section-title">People</h2>
+          <p class="lede">Postdocs, graduate students and interns from chemistry, data science and engineering.</p>
+          <a class="link-arrow" href="people.html">Meet the team <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 class="section-title reveal">Recent papers</h2>
+          <a class="link-arrow reveal" href="publications.html">All publications <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+        <div class="pub-cards" id="recent-pubs"></div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 class="section-title reveal">News</h2>
+          <a class="link-arrow reveal" href="news.html">All news <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+        <div class="news-rows" id="latest-news"></div>
+      </div>
+    </section>
+
+    <section class="section section-dark">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 class="section-title reveal">Join us</h2>
+          <a class="link-arrow link-light reveal" href="joinus.html">Details <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+        <div class="join-cards">
+          <a class="join-card reveal" href="joinus.html#postdoc"><span class="k">01</span><h3>Postdoctoral researchers</h3><p>Lead your own project with DFT, ML or process modeling.</p></a>
+          <a class="join-card reveal" href="joinus.html#graduate"><span class="k">02</span><h3>Graduate students</h3><p>M.S. and Ph.D. through KIST's degree programs.</p></a>
+          <a class="join-card reveal" href="joinus.html#intern"><span class="k">03</span><h3>Interns</h3><p>Hands-on research for undergraduates.</p></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+
+  <script src="assets/js/data.js?v=20260927i"></script>
+  <script src="assets/js/publications.js?v=20260927i"></script>
+  <script src="assets/js/main.js?v=20260927i"></script>
+</body>
+</html>

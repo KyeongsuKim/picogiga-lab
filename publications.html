@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Publications · picoGIGA Lab</title>
+  <meta name="description" content="Papers, patents and preprints of the picoGIGA Lab, KIST.">
+  <meta name="theme-color" content="#fbfaf7">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+  <link rel="stylesheet" href="assets/css/style.css?v=20260927i">
+</head>
+<body data-page="publications">
+  <header class="site-header" id="site-header"></header>
+
+  <main>
+    <section class="page-hero">
+      <div class="wrap">
+        <h1>Publications</h1>
+        <div class="pub-stats" id="pub-stats"></div>
+      </div>
+    </section>
+
+    <section class="section" style="padding-top: 40px">
+      <div class="wrap">
+        <div class="toolbar">
+          <div class="toolbar-row">
+            <div class="chips" id="type-chips" role="group" aria-label="Type"></div>
+            <div class="filters-right">
+              <select class="select" id="topic-select" aria-label="Topic"></select>
+              <select class="select" id="year-select" aria-label="Year"></select>
+              <label class="search">
+                <span class="sr-only">Search</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="m20 20-4.2-4.2"/></svg>
+                <input id="pub-search" type="search" placeholder="Title, journal, author" autocomplete="off">
+              </label>
+            </div>
+          </div>
+        </div>
+        <p class="result-note" id="pub-note" aria-live="polite"></p>
+        <div id="pub-groups"></div>
+        <p class="sync-note" id="sync-note"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="site-footer"></footer>
+
+  <script src="assets/js/data.js?v=20260927i"></script>
+  <script src="assets/js/publications.js?v=20260927i"></script>
+  <script src="assets/js/main.js?v=20260927i"></script>
+</body>
+</html>

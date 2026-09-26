@@ -1,0 +1,4 @@
+# Personal documents: never publish (e.g. the KIST researcher profile PDF)
+assets/*.pdf
+*.pdf
+tools/__pycache__/

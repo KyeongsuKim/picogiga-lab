@@ -1,0 +1,30 @@
+name: Sync publications
+
+on:
+  schedule:
+    - cron: "0 21 * * 0"   # every Monday 06:00 KST
+  workflow_dispatch:        # "Run workflow" button on GitHub
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Pull Google Scholar, OpenAlex, KIPRIS
+        env:
+          KIPRIS_API_KEY: ${{ secrets.KIPRIS_API_KEY }}
+          OPENALEX_API_KEY: ${{ secrets.OPENALEX_API_KEY }}
+        run: python tools/sync_publications.py
+      - name: Commit if anything changed
+        run: |
+          git config user.name "publication-sync"
+          git config user.email "actions@users.noreply.github.com"
+          git add assets/js/publications.js tools/cache
+          git diff --cached --quiet || git commit -m "Sync publications"
+          git push

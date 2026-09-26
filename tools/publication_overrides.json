@@ -1,0 +1,39 @@
+{
+  "_help": [
+    "Manual corrections applied after every sync. 'match' is a piece of the title (case and punctuation are ignored).",
+    "first: lab members who are first or co-first authors when author order alone doesn't show it.",
+    "corresponding: lab members who are corresponding authors when OpenAlex misses it.",
+    "hide: titles to drop (duplicates, abstracts you don't want listed, other people's patents).",
+    "not_lab: a co-author was wrongly matched to a lab member (same name), e.g. { \"match\": \"title\", \"members\": [\"Hyerim Kim\"] }.",
+    "type: force a type (journal, conference, patent, preprint).",
+    "topics: set research-area tags by hand, e.g. { \"match\": \"title\", \"topics\": [\"co2\", \"ml\"] }. Ids: co2, biomass, plastic, dft, ml, process.",
+    "extra: items that exist nowhere online."
+  ],
+
+  "first": [
+    { "match": "Is an acidic environment the optimal direction for CO2 electroreduction", "authors": ["Hyerim Kim"] },
+    { "match": "Tuning Interfacial Water Dynamics via Gd-Doped Cu2O", "authors": ["Eugene Huh"] },
+    { "match": "Hidden Axis of Uncertainty", "authors": ["Suk Hoon Choi"] }
+  ],
+
+  "corresponding": [
+    { "match": "Is an acidic environment the optimal direction for CO2 electroreduction", "authors": ["Kyeongsu Kim"] },
+    { "match": "Tuning Interfacial Water Dynamics via Gd-Doped Cu2O", "authors": ["Kyeongsu Kim"] },
+    { "match": "Hidden Axis of Uncertainty", "authors": ["Kyeongsu Kim"] },
+    { "match": "Unlocking Net-Negative Methanol Synthesis", "authors": ["Kyeongsu Kim"] }
+  ],
+
+  "hide": [
+    "선박용 유증기 회수설비"
+  ],
+
+  "not_lab": [],
+
+  "type": [],
+
+  "topics": [
+    { "match": "Is an acidic environment the optimal direction for CO2 electroreduction", "topics": ["co2", "process"] }
+  ],
+
+  "extra": []
+}

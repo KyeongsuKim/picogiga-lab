@@ -1,0 +1,57 @@
+{
+  "_help": [
+    "Dr. Kyeongsu Kim's role in each paper, from the KIST researcher profile (2026-09).",
+    "Public metadata (OpenAlex/Crossref) misses many corresponding authors and never records co-first authorship, so these lists take priority.",
+    "Each entry is a case-insensitive piece of the paper title.",
+    "coauthor: papers where he is neither first nor corresponding; clears a wrong corresponding flag from OpenAlex."
+  ],
+  "corresponding": [
+    "Dynamic maintenance of underground pipelines",
+    "Thermodynamically guided process design for formic acid recovery",
+    "TiO2-Supported Ru",
+    "Tailored Reconstruction of Polycrystalline CuO Nanorods",
+    "Development of a bridged structure compound from isophorone",
+    "Tailoring oxygen vacancies on bismuth",
+    "Computational screening of sodium solid electrolytes",
+    "Economically viable co-production of methanol and sulfuric acid",
+    "Economic and environmental potential of green hydrogen carriers",
+    "Implementation of formic acid as a liquid organic hydrogen carrier",
+    "A comparative techno-economic and quantitative risk analysis of hydrogen delivery",
+    "Quantitative risk assessment integrated with dynamic process simulation"
+  ],
+  "first": [
+    "Tailoring electrochemical CO2 reduction via substrate-induced gas diffusion",
+    "A comprehensive analysis of biphasic reaction system",
+    "Adaptive approach for estimation of pipeline corrosion defects",
+    "New strategies for economically feasible CO2 electroreduction",
+    "Data-driven pilot optimization for electrochemical CO mass production",
+    "Toward the practical application of direct CO2 hydrogenation"
+  ],
+  "coauthor": [
+    "Synthesis of hexafluoropropylene oxide",
+    "Visibly transparent UV protection",
+    "Bayesian optimization of industrial-scale toluene diisocyanate",
+    "Exsolved SrTiRuOx",
+    "Thermally treated polyvinyl chloride",
+    "Hydrodeoxygenation of lignin-derived guaiacol",
+    "Exsolution-prepared LaTi1-xNixOy",
+    "A Shortcut Modeling Platform",
+    "Comprehensive Analysis of Optimal Thermal Management",
+    "catalytic hydrogenation of vanillin and non-catalytic condensation",
+    "Optimum phenolic monomer production",
+    "Discovering the Origin of Catalyst Performance",
+    "Effect of CeO2 morphology",
+    "Production of high-carbon-number naphthenes",
+    "Adsorbed oxygen atoms for improving",
+    "Catalytic hydrocracking of pyrolytic lignin",
+    "The green-ol (green-alcohol) economy",
+    "Roles of metal and acid sites",
+    "Selective hydrodeoxygenation of biomass pyrolysis oil",
+    "Improved hydrodeoxygenation of lignin-derived oxygenates",
+    "One-pot selective production of deoxygenated",
+    "Isobaric vapor",
+    "Learning the properties of a water-lean amine solvent",
+    "Root causality analysis",
+    "Design and optimization of multi-component organic rankine cycle"
+  ]
+}

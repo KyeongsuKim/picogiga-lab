@@ -1,0 +1,24 @@
+{
+  "scholar_user": "N7KmegUAAAAJ",
+
+  "_exclude_types": "Scholar item types left off the site (journal, conference, preprint, patent)",
+  "exclude_types": ["conference"],
+  "contact_email": "kyeongsu@kist.re.kr",
+
+  "pi_orcid": "0000-0002-9383-7605",
+
+  "_pi_aliases": "Ways the PI's name appears in Google Scholar / patent author strings",
+  "pi_aliases": ["K Kim", "KS Kim", "KIM Kyeongsu", "Kyeongsu Kim", "김경수"],
+
+  "_main_author_members": "Lab members marked * (first/main author) on every paper they appear in",
+  "main_author_members": ["Eugene Huh", "Hyerim Kim"],
+
+  "_former_members": "Alumni whose papers should still be marked as lab first/corresponding author. Current members are read from assets/js/data.js automatically.",
+  "former_members": [],
+
+  "kipris": {
+    "_note": "Korean patents. Set the KIPRIS_API_KEY environment variable (or GitHub secret) to enable.",
+    "inventor": "김경수",
+    "applicant": "한국과학기술연구원"
+  }
+}
