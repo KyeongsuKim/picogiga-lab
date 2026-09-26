@@ -47,7 +47,7 @@ OpenAlex does not know the corresponding author of every paper. Add missing ones
 ### Running it
 
 - **By hand**: double-click `tools/sync.bat` (or `python tools/sync_publications.py`). New papers are listed at the end (also in `tools/cache/new_items.json`).
-- **Automatically**: on GitHub, `.github/workflows/sync-publications.yml` runs every day at 06:00 KST and commits the new list. Google Scholar often blocks GitHub's servers; the script then keeps the old list, logs a warning, and tries again the next day. If the "updated" date on the Publications page stops moving for more than a week, run it by hand.
+- **Automatically**: on GitHub, `.github/workflows/sync-publications.yml` syncs every two weeks and commits the new list. It checks daily at 06:00 KST and runs only when the last successful sync is 14+ days old. Google Scholar often blocks GitHub's servers; the script then keeps the old list, logs a warning, and tries again the next day. If the "updated" date on the Publications page is more than three weeks old, run it by hand (Actions → Sync publications → Run workflow always syncs).
 
 ### Korean patents (KIPRIS)
 
