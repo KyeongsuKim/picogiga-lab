@@ -2,7 +2,7 @@ name: Sync publications
 
 on:
   schedule:
-    - cron: "0 21 * * 0"   # every Monday 06:00 KST
+    - cron: "0 21 * * *"   # every day 06:00 KST (Google Scholar often blocks cloud IPs, so retry daily)
   workflow_dispatch:        # "Run workflow" button on GitHub
 
 permissions:

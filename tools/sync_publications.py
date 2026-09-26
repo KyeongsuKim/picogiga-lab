@@ -154,14 +154,23 @@ def short_name(full):
 # --------------------------------------------------------------------------
 # 1. Google Scholar
 # --------------------------------------------------------------------------
+class ScholarBlocked(RuntimeError):
+    """Scholar refused the request (403/429 or a CAPTCHA page); common from cloud IPs, so not fatal."""
+
+
 def fetch_scholar(user):
     items, start = [], 0
     stats = {}
     while True:
         url = f"https://scholar.google.com/citations?user={user}&hl=en&cstart={start}&pagesize=100&sortby=pubdate"
-        page = get(url)
+        try:
+            page = get(url)
+        except urllib.error.HTTPError as e:
+            if e.code in (403, 429):
+                raise ScholarBlocked(f"Google Scholar refused the request: HTTP {e.code}") from e
+            raise
         if "gsc_a_tr" not in page and start == 0:
-            raise RuntimeError("Google Scholar returned no publications (blocked or CAPTCHA?)")
+            raise ScholarBlocked("Google Scholar returned no publications (blocked or CAPTCHA?)")
         if start == 0:
             nums = re.findall(r'class="gsc_rsb_std">(\d+)<', page)
             if len(nums) >= 6:
@@ -677,6 +686,11 @@ def write(pubs, stats):
 if __name__ == "__main__":
     try:
         pubs, stats = build()
+    except ScholarBlocked as e:
+        # The daily GitHub run retries tomorrow; one success a week is enough.
+        print(f"::warning::{e}. Keeping the existing file." if os.environ.get("GITHUB_ACTIONS") else
+              f"Sync skipped, keeping the existing file: {e}")
+        sys.exit(0 if os.environ.get("GITHUB_ACTIONS") else 1)
     except Exception as e:  # noqa: BLE001
         print(f"Sync failed, keeping the existing file: {e}")
         sys.exit(1)
