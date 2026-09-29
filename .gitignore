@@ -2,3 +2,6 @@
 assets/*.pdf
 *.pdf
 tools/__pycache__/
+
+# Full-size photo originals (may contain GPS metadata): never publish
+originals/

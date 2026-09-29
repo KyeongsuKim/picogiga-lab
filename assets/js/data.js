@@ -78,6 +78,8 @@ window.ALUMNI = [
 
 /* Group photos, NEWEST FIRST. The home page shows the first one that exists. */
 window.GROUP_PHOTOS = [
+  { src: "assets/img/group/2026-06.jpg", caption: "June 2026" },
+  { src: "assets/img/group/2026-04.jpg", caption: "April 2026" },
   { src: "assets/img/group/2025-09.jpg", caption: "September 2025" },
   { src: "assets/img/group/2025-06.jpg", caption: "June 2025" },
   { src: "assets/img/group/2025-04.jpg", caption: "April 2025" },
