@@ -538,6 +538,9 @@ def apply_overrides(pubs):
     hide = OVR.get("hide", [])
     roles = load_json(os.path.join(HERE, "pi_roles.json"), {})
     for p in pubs:
+        for rule in OVR.get("title", []):
+            if has(p["t"], rule.get("match", "")):
+                p["t"] = rule["title"]
         t = p["t"]
         if any(has(t, h) for h in hide):
             p["_hide"] = True
