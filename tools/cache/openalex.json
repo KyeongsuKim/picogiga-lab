@@ -2853,5 +2853,186 @@
 }
 ],
 "src": "openalex"
+},
+"unravelingtheeffectsofalloyingandheteroatomdopingonelectrochemicalnitratereductionthroughasystematiccarbothermalshockstrategy": {
+"doi": "https://doi.org/10.1016/j.cej.2026.182906",
+"title": "Unraveling the effects of alloying and hetero-atom doping on electrochemical nitrate reduction through a systematic carbothermal shock strategy",
+"authors": [
+{
+"name": "Suhyun Hwang",
+"orcid": "",
+"corr": false
+},
+{
+"name": "Minki Kim",
+"orcid": "0000-0001-8821-5054",
+"corr": false
+},
+{
+"name": "Eugene Huh",
+"orcid": "0009-0005-1077-6085",
+"corr": false
+},
+{
+"name": "Gukbo Kim",
+"orcid": "0000-0002-4224-886X",
+"corr": false
+},
+{
+"name": "Jaedong Jang",
+"orcid": "",
+"corr": false
+},
+{
+"name": "Chulwan Lim",
+"orcid": "0009-0008-9467-209X",
+"corr": false
+},
+{
+"name": "Dayeon Kim",
+"orcid": "",
+"corr": false
+},
+{
+"name": "Hyo Sang Jeon",
+"orcid": "0000-0003-3486-0589",
+"corr": false
+},
+{
+"name": "Hyung-Suk Oh",
+"orcid": "0000-0002-0310-6666",
+"corr": false
+},
+{
+"name": "Min Wook Pin",
+"orcid": "0000-0003-0808-9970",
+"corr": false
+},
+{
+"name": "Andi Haryanto",
+"orcid": "0000-0002-5548-5397",
+"corr": false
+},
+{
+"name": "Chan Woo Lee",
+"orcid": "0000-0001-8370-1985",
+"corr": false
+},
+{
+"name": "Kyeongsu Kim",
+"orcid": "",
+"corr": false
+},
+{
+"name": "Seung-Ho Yu",
+"orcid": "0000-0003-3912-6463",
+"corr": false
+},
+{
+"name": "Chansol Kim",
+"orcid": "0000-0002-7554-1405",
+"corr": false
+}
+],
+"src": "openalex",
+"v": 2
+},
+"catalyticupgradingoflignocellulosepyrolysisoiloverathreestepcatalystbedcontaininglaticenimixedoxidesforbioaviationfuelproduction": {
+"doi": "https://doi.org/10.1016/j.cej.2026.182187",
+"title": "Continuous-flow catalytic upgrading of lignocellulose pyrolysis oil over a three-step catalyst bed containing La-Ti-Ce-Ni mixed oxides for bio-aviation fuel production",
+"authors": [
+{
+"name": "Jong Hyun Lee",
+"orcid": "",
+"corr": false
+},
+{
+"name": "Nurul Fuadi Pratiwi Sulaiman",
+"orcid": "",
+"corr": false
+},
+{
+"name": "Lien Thi Do",
+"orcid": "0000-0003-2695-6548",
+"corr": false
+},
+{
+"name": "Hyein Jung",
+"orcid": "",
+"corr": false
+},
+{
+"name": "Jisong Kang",
+"orcid": "0009-0004-2014-5669",
+"corr": false
+},
+{
+"name": "Jina Eun",
+"orcid": "0000-0003-1321-7201",
+"corr": false
+},
+{
+"name": "Jae-Wook Choi",
+"orcid": "",
+"corr": false
+},
+{
+"name": "Seongmin Jin",
+"orcid": "",
+"corr": false
+},
+{
+"name": "Chang Soo Kim",
+"orcid": "",
+"corr": false
+},
+{
+"name": "Kwang Ho Kim",
+"orcid": "0000-0003-3943-1927",
+"corr": true
+},
+{
+"name": "Kwang Ho Kim",
+"orcid": "0000-0003-3943-1927",
+"corr": false
+},
+{
+"name": "Hyunjoo Lee",
+"orcid": "",
+"corr": false
+},
+{
+"name": "Kwang Ho Song",
+"orcid": "0000-0002-3011-1495",
+"corr": false
+},
+{
+"name": "Jungkyu Choi",
+"orcid": "0000-0003-1137-4799",
+"corr": false
+},
+{
+"name": "Kyeongsu Kim",
+"orcid": "0000-0002-9383-7605",
+"corr": true
+},
+{
+"name": "Kyeongsu Kim",
+"orcid": "0000-0002-9383-7605",
+"corr": false
+},
+{
+"name": "Chun-Jae Yoo",
+"orcid": "0000-0002-1392-5817",
+"corr": true
+},
+{
+"name": "Jeong-Myeong Ha",
+"orcid": "0000-0002-0761-6356",
+"corr": true
+}
+],
+"src": "openalex",
+"v": 2
 }
 }
