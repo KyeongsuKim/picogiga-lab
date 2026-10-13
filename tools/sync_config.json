@@ -16,6 +16,11 @@
   "_former_members": "Alumni whose papers should still be marked as lab first/corresponding author. Current members are read from assets/js/data.js automatically.",
   "former_members": [],
 
+  "_member_aliases": "Full names on papers that differ from the name in data.js (name on paper -> data.js name)",
+  "member_aliases": {
+    "Nurul Fuadi Pratiwi Sulaiman": "Nurul Fuadi P.S."
+  },
+
   "kipris": {
     "_note": "Korean patents. Set the KIPRIS_API_KEY environment variable (or GitHub secret) to enable.",
     "inventor": "김경수",

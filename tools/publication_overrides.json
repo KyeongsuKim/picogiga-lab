@@ -13,14 +13,16 @@
   "first": [
     { "match": "Is an acidic environment the optimal direction for CO2 electroreduction", "authors": ["Hyerim Kim"] },
     { "match": "Tuning Interfacial Water Dynamics via Gd-Doped Cu2O", "authors": ["Eugene Huh"] },
-    { "match": "Hidden Axis of Uncertainty", "authors": ["Suk Hoon Choi"] }
+    { "match": "Hidden Axis of Uncertainty", "authors": ["Suk Hoon Choi"] },
+    { "match": "Catalytic upgrading of lignocellulose pyrolysis oil over a three-step catalyst bed", "authors": ["Nurul Fuadi P.S."] }
   ],
 
   "corresponding": [
     { "match": "Is an acidic environment the optimal direction for CO2 electroreduction", "authors": ["Kyeongsu Kim"] },
     { "match": "Tuning Interfacial Water Dynamics via Gd-Doped Cu2O", "authors": ["Kyeongsu Kim"] },
     { "match": "Hidden Axis of Uncertainty", "authors": ["Kyeongsu Kim"] },
-    { "match": "Unlocking Net-Negative Methanol Synthesis", "authors": ["Kyeongsu Kim"] }
+    { "match": "Unlocking Net-Negative Methanol Synthesis", "authors": ["Kyeongsu Kim"] },
+    { "match": "Unraveling the effects of alloying and hetero-atom doping", "authors": ["Kyeongsu Kim"] }
   ],
 
   "hide": [

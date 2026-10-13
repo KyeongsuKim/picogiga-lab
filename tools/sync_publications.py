@@ -106,8 +106,14 @@ PI_NAME = "Kyeongsu Kim"
 PI_ALIASES = {a.lower() for a in CFG.get("pi_aliases", [])}
 
 
+MEMBER_ALIASES = {name_key(a): m for a, m in CFG.get("member_aliases", {}).items()
+                  if not a.startswith("_") and name_key(a)}
+
+
 def match_member(full_name):
     k = name_key(full_name)
+    if k in MEMBER_ALIASES:
+        return MEMBER_ALIASES[k]
     if not k:
         return None
     if k in MEMBER_KEYS:
@@ -435,7 +441,13 @@ def build():
             if oa.get("doi"):
                 entry["u"] = oa["doi"]
             entry["a"] = []
+            prev = None
             for a in oa["authors"]:
+                # OpenAlex lists an author twice when they have two affiliations; keep one
+                if prev and a["name"] == prev[0]["name"]:
+                    if a["corr"]:
+                        prev[1]["c"] = 1
+                    continue
                 member = PI_NAME if a.get("orcid") and a["orcid"] == CFG.get("pi_orcid") else match_member(a["name"])
                 au = {"n": short_name(a["name"])}
                 if member:
@@ -443,6 +455,7 @@ def build():
                 if a["corr"]:
                     au["c"] = 1
                 entry["a"].append(au)
+                prev = (a, au)
         else:
             # fall back to Scholar's (possibly truncated) author string
             names = [n.strip() for n in it["authors"].split(",") if n.strip()]
